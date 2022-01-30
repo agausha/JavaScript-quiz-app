@@ -46,15 +46,15 @@ body {
   min-height: 37rem;
   padding: 5rem 4rem;
   border-radius: 1rem;
-  -webkit-box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0.1rem 0.4rem 0 rgba(88, 224, 233, 0.302);
+          box-shadow: 0 0.1rem 0.4rem 0 rgba(88, 224, 233, 0.302);
 }
 
 .container {
   background: whitesmoke;
   border-radius: 1rem;
-  -webkit-box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0.1rem 0.4rem 0 rgba(88, 224, 233, 0.302);
+          box-shadow: 0 0.1rem 0.4rem 0 rgba(88, 224, 233, 0.302);
   min-height: 35rem;
   width: 64rem;
   padding: 2rem;

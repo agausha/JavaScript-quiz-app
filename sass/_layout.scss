@@ -2,18 +2,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: hsl(0, 0%, 96%);
+  background: $color-primary-light-white;
   width: 53rem;
   min-height: 37rem;
   padding: 5rem 4rem;
   border-radius: 1rem;
-  box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.1rem 0.4rem 0 $color-primary-darker-cyan;
 }
 
 .container {
-  background: hsl(0, 0%, 96%);
+  background: $color-primary-light-white;
   border-radius: 1rem;
-  box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.1rem 0.4rem 0 $color-primary-darker-cyan;
   min-height: 35rem;
   width: 64rem;
   padding: 2rem;
