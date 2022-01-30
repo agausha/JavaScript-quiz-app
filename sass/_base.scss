@@ -9,18 +9,18 @@ $color-primary-pink-red: hsl(354, 70%, 54%);
 $color-primary-green: hsl(134, 61%, 41%);
 
 
-// *,
-// *::before,
-// *::after {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-//   border: 0;
-// }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
 
-// html {
-//   font-size: 62.5%; //1rem = 10px 10px/16px = 62.5%
-// }
+html {
+  font-size: 62.5%; //1rem = 10px 10px/16px = 62.5%
+}
 
 // body {
 //   font-family: 'Poppins', sans-serif;
