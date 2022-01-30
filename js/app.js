@@ -1,9 +1,9 @@
-// const question = document.querySelector('.question');
-// const options = Array.from(document.getElementsByClassName('option__text')); // Converting into an Array & using an Array function
-// const questionCounterText = document.getElementById("questionCounter");
-// const scoreText = document.getElementById('score');
-// const loader = document.querySelector('.loader');
-// const quiz = document.querySelector('.quiz');
+const question = document.querySelector('.question');
+const options = Array.from(document.getElementsByClassName('option__text')); // Converting into an Array & using an Array function
+const questionCounterText = document.getElementById("questionCounter");
+const scoreText = document.getElementById('score');
+const loader = document.querySelector('.loader');
+const quiz = document.querySelector('.quiz');
 
 
 // // VARIABLES
