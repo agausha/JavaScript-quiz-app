@@ -6,12 +6,12 @@ const loader = document.querySelector('.loader');
 const quiz = document.querySelector('.quiz');
 
 
-// // VARIABLES
-// let currentQuestion = {}; // Creating a delay to wait for some seconds before loading the next question again
-// let acceptingAnswers = false;
-// let score = 0;
-// let questionCounter = 0; // Showing the question number you are currently on
-// let availableQuestions = []; // Finding a unique question from the availableQuestions Array to give the user
+// VARIABLES
+let currentQuestion = {}; // Creating a delay to wait for some seconds before loading the next question again
+let acceptingAnswers = false;
+let score = 0;
+let questionCounter = 0; // Showing the question number you are currently on
+let availableQuestions = []; // Finding a unique question from the availableQuestions Array to give the user
 
 // let questions = [];
 
