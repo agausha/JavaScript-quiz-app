@@ -22,13 +22,13 @@
   }
 }
 
-// .correct {
-//   background-color: $color-primary-green;
-// }
+.correct {
+  background-color: $color-primary-green;
+}
 
-// .incorrect {
-//   background-color: $color-primary-pink-red;
-// }
+.incorrect {
+  background-color: $color-primary-pink-red;
+}
 
 .question {
   background: $color-primary-strong-cyan;
@@ -217,7 +217,7 @@ input::placeholder {
   color: $color-primary-light-grayish-red;
 }
 
-/* FINAL SCORES*/
+/* FINAL SCORE*/
 #finalScore {
   text-align: center;
   margin-bottom: 1.5rem;

@@ -64,6 +64,14 @@ body {
   margin-right: 1rem;
 }
 
+.correct {
+  background-color: #29a847;
+}
+
+.incorrect {
+  background-color: #dc3848;
+}
+
 .question {
   background: #3adfc6;
   color: white;
@@ -263,7 +271,7 @@ input::placeholder {
   color: #b1aaaa;
 }
 
-/* FINAL SCORES*/
+/* FINAL SCORE*/
 #finalScore {
   text-align: center;
   margin-bottom: 1.5rem;
