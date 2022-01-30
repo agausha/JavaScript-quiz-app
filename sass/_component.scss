@@ -217,33 +217,33 @@ input::placeholder {
   color: $color-primary-light-grayish-red;
 }
 
-// /* FINAL SCORES*/
-// #finalScore {
-//   text-align: center;
-//   margin-bottom: 1.5rem;
-//   font-size: 3rem;
-//   color: $color-primary-strong-cyan;
+/* FINAL SCORES*/
+#finalScore {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  color: $color-primary-strong-cyan;
 
-//     border-radius: 100px;
-//     padding: 5px 15px;
-//     border-bottom: 2px solid $color-primary-dark-red;
-// }
+    border-radius: 100px;
+    padding: 5px 15px;
+    border-bottom: 2px solid $color-primary-dark-red;
+}
 
-// .finalScoresList {
-//   list-style: none;
-//   text-align: center;
-//   padding-left: 0;
-//   margin-bottom: 4rem;
-// }
+.finalScoresList {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 4rem;
+}
 
-// .final-score {
-//   font-size: 2.8rem;
-//   margin-bottom: 0.5rem;
-// }
+.final-score {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
 
-// .final-score:hover {
-//   transform: scale(1.025);
-// }
+.final-score:hover {
+  transform: scale(1.025);
+}
 
 // ///////////////////////////////////////////////
 // //MEDIA QUERIES
