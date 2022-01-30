@@ -222,6 +222,47 @@ body {
           box-shadow: 0 0.4rem 1.4rem 0 rgba(88, 224, 233, 0.302);
 }
 
+/* FORMS */
+form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input {
+  margin-bottom: 2rem;
+  width: 25rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  -webkit-box-shadow: 0 0.1rem 0.4rem 0 rgba(88, 224, 233, 0.302);
+          box-shadow: 0 0.1rem 0.4rem 0 rgba(88, 224, 233, 0.302);
+}
+
+input::-webkit-input-placeholder {
+  color: #b1aaaa;
+}
+
+input:-ms-input-placeholder {
+  color: #b1aaaa;
+}
+
+input::-ms-input-placeholder {
+  color: #b1aaaa;
+}
+
+input::placeholder {
+  color: #b1aaaa;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
