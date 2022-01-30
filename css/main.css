@@ -64,6 +64,14 @@ body {
   margin-right: 1rem;
 }
 
+.question {
+  background: #3adfc6;
+  color: white;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
 /* HOME */
 .home__title {
   font-size: 3rem;
