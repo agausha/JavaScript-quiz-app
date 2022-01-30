@@ -1,0 +1,6 @@
+JavaScript Quiz Application
+
+- The Application save final scores in Local storage
+- Also, fetch trivia questions from Open Trivia DB API
+
+
