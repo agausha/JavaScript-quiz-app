@@ -109,20 +109,19 @@ options.forEach((option) => {
       selectedOption.parentElement.classList.remove(classToApply);
       getNewQuestion();
     }, 1000);
-})
+
+    // INCREMENTING  SCORE
+    incrementScore = (num) => {
+      score += num;
+      scoreText.innerText = `${score}%`;
+    };
+
+    if (classToApply === 'correct') {
+      incrementScore(CORRECT_ANSWERS);
+    }
+
+  });
 });
-//     // INCREMENTING  SCORE
-//     incrementScore = (num) => {
-//       score += num;
-//       scoreText.innerText = `${score}%`;
-//     };
-
-//     if (classToApply === 'correct') {
-//       incrementScore(CORRECT_ANSWERS);
-//     }
-
-//   });
-// });
 
 // // ADDING TIME COUNTER
 // let time = 3.35;
