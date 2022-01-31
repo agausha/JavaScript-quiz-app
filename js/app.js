@@ -53,15 +53,15 @@ fetch(
 const CORRECT_ANSWERS = 10; // Marks per Correct Answer
 const MAX_QUESTIONS = 10; // Maximum questions to answer before finishing the quiz
 
-// // Using spread operator to go into new Array which is (availableQuestions)
-// startQuiz = () => {
-//   questionCounter = 0;
-//   score = 0;
-//   availableQuestions = [...questions];  
-//   getNewQuestion();
+// Using spread operator to go into new Array which is (availableQuestions)
+startQuiz = () => {
+  questionCounter = 0;
+  score = 0;
+  availableQuestions = [...questions];  
+  getNewQuestion();
 //   quiz.classList.remove('hidden');
 //   loader.classList.add('hidden');
-// };
+};
 
 // // SAVING SCORES IN LOCAL STORAGE
 // getNewQuestion = () => {
