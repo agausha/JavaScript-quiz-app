@@ -89,15 +89,16 @@ startQuiz = () => {
 //   acceptingAnswers = true;
 // };
 
-// // MAKING SELECTION FROM OPTIONS
-// options.forEach((option) => {
-//   option.addEventListener('click', (e) => {
-//     if (!acceptingAnswers) return;
+// MAKING SELECTION FROM OPTIONS
+options.forEach((option) => {
+  option.addEventListener('click', (e) => {
+    if (!acceptingAnswers) return;
 
-//     acceptingAnswers = false;
-//     const selectedOption = e.target;
-//     const selectedAnswer = selectedOption.dataset['number'];
-
+    acceptingAnswers = false;
+    const selectedOption = e.target;
+    const selectedAnswer = selectedOption.dataset['number'];
+  })
+});
 //     // CHOOSING CLASS TO APPLY USING TENARY OPERATOR SYNTAX FOR CORRECT / INCORRECT ANSWERS
 //     const classToApply =
 //       selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
