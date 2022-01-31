@@ -312,6 +312,15 @@ input::placeholder {
           transform: scale(1.025);
 }
 
+@media only screen and (max-width: 570px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;

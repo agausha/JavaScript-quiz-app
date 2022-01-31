@@ -258,20 +258,13 @@ input::placeholder {
   transform: scale(1.025);
 }
 
-// ///////////////////////////////////////////////
-// //MEDIA QUERIES
+///////////////////////////////////////////////
+//MEDIA QUERIES
 
-// // @media only screen and (max-width: 670px) {
-// //   main .container .header {
-// //   //flex-direction: column;
-// //   }
-// // }
+@media only screen and (max-width: 570px) {
+  .header {
+  flex-direction: column;
+  }
+}
 
-// @media only screen and (max-width: 570px) {
-//   .main, .container, .home {
-//     &__list {
-//       font-size: 1.3rem;
-//     }
-// }
-// }
 
