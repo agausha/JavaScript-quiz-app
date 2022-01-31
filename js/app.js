@@ -63,13 +63,13 @@ startQuiz = () => {
 //   loader.classList.add('hidden');
 };
 
-// // SAVING SCORES IN LOCAL STORAGE
-// getNewQuestion = () => {
-//   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-//     localStorage.setItem('mostRecentScore', score);
-//     //go to the finish page
-//     return window.location.assign('/finish.html');
-//   }
+// SAVING SCORES IN LOCAL STORAGE
+getNewQuestion = () => {
+  if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    localStorage.setItem('mostRecentScore', score);
+    //go to the finish page
+    return window.location.assign('/finish.html');
+  }
 
   //GETTING A RANDOM QUESTION NUMBER 
   questionCounter++;
@@ -84,10 +84,10 @@ startQuiz = () => {
     option.innerHTML = currentQuestion['option' + number];
   });
 
-//   // GETTING RID OF QUESTION THAT HAS ALREADY BEEN USED (USING SPLICE)
-//   availableQuestions.splice(questionIndex, 1);
-//   acceptingAnswers = true;
-// };
+  // GETTING RID OF QUESTION THAT HAS ALREADY BEEN USED (USING SPLICE)
+  availableQuestions.splice(questionIndex, 1);
+  acceptingAnswers = true;
+};
 
 // MAKING SELECTION FROM OPTIONS
 options.forEach((option) => {
