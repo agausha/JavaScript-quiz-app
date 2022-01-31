@@ -45,9 +45,9 @@ fetch(
 
     startQuiz();
   })
-  .catch((err) => {
-    console.error(err);
-  });
+//   .catch((err) => {
+//     console.error(err);
+//   });
 
 // //CONSTANTS
 // const CORRECT_ANSWERS = 10; // Marks per Correct Answer
