@@ -2,8 +2,8 @@ const question = document.querySelector('.question');
 const options = Array.from(document.getElementsByClassName('option__text')); // Converting into an Array & using an Array function
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById('score');
-const loader = document.querySelector('.loader');
-const quiz = document.querySelector('.quiz');
+// const loader = document.querySelector('.loader');
+// const quiz = document.querySelector('.quiz');
 
 
 // VARIABLES
@@ -13,41 +13,41 @@ let score = 0;
 let questionCounter = 0; // Showing the question number you are currently on
 let availableQuestions = []; // Finding a unique question from the availableQuestions Array to give the user
 
-// let questions = [];
+let questions = [];
 
-// // FETCHING QUESTIONS FROM API
-// fetch(
-//   'https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple',
-// )
-//   .then((res) => {
-//     return res.json();
-//   })
-//   .then((loadedQuestions) => {
-//     questions = loadedQuestions.results.map((loadedQuestion) => {
-//       const formattedQuestion = {
-//         question: loadedQuestion.question,
-//       };
+// FETCHING QUESTIONS FROM API
+fetch(
+  'https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple',
+)
+  .then((res) => {
+    return res.json();
+  })
+  .then((loadedQuestions) => {
+    questions = loadedQuestions.results.map((loadedQuestion) => {
+      const formattedQuestion = {
+        question: loadedQuestion.question,
+      };
 
-//       const answerOptions = [...loadedQuestion.incorrect_answers];
-//       formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
-//       answerOptions.splice(
-//         formattedQuestion.answer - 1,
-//         0,
-//         loadedQuestion.correct_answer,
-//       );
+      const answerOptions = [...loadedQuestion.incorrect_answers];
+      formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
+      answerOptions.splice(
+        formattedQuestion.answer - 1,
+        0,
+        loadedQuestion.correct_answer,
+      );
 
-//       answerOptions.forEach((option, index) => {
-//         formattedQuestion['option' + (index + 1)] = option;
-//       });
+      answerOptions.forEach((option, index) => {
+        formattedQuestion['option' + (index + 1)] = option;
+      });
 
-//       return formattedQuestion;
-//     });
+      return formattedQuestion;
+    });
 
-//     startQuiz();
-//   })
-//   .catch((err) => {
-//     console.error(err);
-//   });
+    startQuiz();
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 
 // //CONSTANTS
 // const CORRECT_ANSWERS = 10; // Marks per Correct Answer
