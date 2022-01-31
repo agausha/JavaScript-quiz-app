@@ -49,9 +49,9 @@ fetch(
     console.error(err);
   });
 
-// //CONSTANTS
-// const CORRECT_ANSWERS = 10; // Marks per Correct Answer
-// const MAX_QUESTIONS = 10; // Maximum questions to answer before finishing the quiz
+//CONSTANTS
+const CORRECT_ANSWERS = 10; // Marks per Correct Answer
+const MAX_QUESTIONS = 10; // Maximum questions to answer before finishing the quiz
 
 // // Using spread operator to go into new Array which is (availableQuestions)
 // startQuiz = () => {
