@@ -97,20 +97,20 @@ options.forEach((option) => {
     acceptingAnswers = false;
     const selectedOption = e.target;
     const selectedAnswer = selectedOption.dataset['number'];
-  })
+
+    // CHOOSING CLASS TO APPLY USING TENARY OPERATOR SYNTAX FOR CORRECT / INCORRECT ANSWERS
+    const classToApply =
+      selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+      //APPLYING THE CLASSES
+    selectedOption.parentElement.classList.add(classToApply);
+
+    setTimeout(() => {
+      selectedOption.parentElement.classList.remove(classToApply);
+      getNewQuestion();
+    }, 1000);
+})
 });
-//     // CHOOSING CLASS TO APPLY USING TENARY OPERATOR SYNTAX FOR CORRECT / INCORRECT ANSWERS
-//     const classToApply =
-//       selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-
-//       //APPLYING THE CLASSES
-//     selectedOption.parentElement.classList.add(classToApply);
-
-//     setTimeout(() => {
-//       selectedOption.parentElement.classList.remove(classToApply);
-//       getNewQuestion();
-//     }, 1000);
-
 //     // INCREMENTING  SCORE
 //     incrementScore = (num) => {
 //       score += num;
