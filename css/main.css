@@ -128,6 +128,19 @@ body {
   margin-bottom: 1rem;
 }
 
+.home__text {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.6;
+  margin: 3rem 0 4rem;
+}
+
+.home__text-1 {
+  font-weight: bold;
+  color: #3adfc6;
+  text-transform: uppercase;
+}
+
 .home__list {
   font-size: 1.5rem;
   line-height: 1.6;

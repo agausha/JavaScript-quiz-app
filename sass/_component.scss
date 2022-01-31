@@ -83,6 +83,19 @@
     margin-bottom: 1rem;
   }
 
+  &__text {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.6;
+    margin: 3rem 0 4rem;
+  }
+
+  &__text-1 {
+    font-weight: bold;
+    color: $color-primary-strong-cyan;
+    text-transform: uppercase;
+  }
+
   &__list {
     font-size: 1.5rem;
     line-height: 1.6;
