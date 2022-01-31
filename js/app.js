@@ -2,6 +2,7 @@ const question = document.querySelector('.question');
 const options = Array.from(document.getElementsByClassName('option__text')); // Converting into an Array & using an Array function
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById('score');
+const counter = document.getElementById('timeCounter');
 // const loader = document.querySelector('.loader');
 // const quiz = document.querySelector('.quiz');
 
@@ -123,25 +124,24 @@ options.forEach((option) => {
   });
 });
 
-// // ADDING TIME COUNTER
-// let time = 3.35;
-// let quizTimeCount = time * 60 * 60;
-// quizTime = quizTimeCount / 60;
+// ADDING TIME COUNTER
+let time = 3.35;
+let quizTimeCount = time * 60 * 60;
+quizTime = quizTimeCount / 60;
 
-// let counter = document.getElementById('timeCounter');
-// startCounter = () => {
-//   const quizTimer = setInterval(function() {
-//     if(quizTime <= 0) {
-//       clearInterval(quizTimer);
-//       return window.location.assign('/finish.html');
-//     }else {
-//       quizTime--;
-//       const sec = Math.floor(quizTime % 60);
-//       const min = Math.floor(quizTime / 60) % 60;
-//       counter.innerHTML = `${min} : ${sec}`;
-//     }
-//   }, 1000)
-// }
+startCounter = () => {
+  const quizTimer = setInterval(function() {
+    if(quizTime <= 0) {
+      clearInterval(quizTimer);
+      return window.location.assign('/finish.html');
+    }else {
+      quizTime--;
+      const sec = Math.floor(quizTime % 60);
+      const min = Math.floor(quizTime / 60) % 60;
+      counter.innerHTML = `${min} : ${sec}`;
+    }
+  }, 1000)
+}
 
-// startCounter();
+startCounter();
 
