@@ -260,6 +260,8 @@ body {
   border-top: 1.6rem solid #3adfc6;
   height: 10rem;
   width: 10rem;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
 }
 
 /* FORMS */
