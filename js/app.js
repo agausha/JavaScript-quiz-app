@@ -77,7 +77,7 @@ getNewQuestion = () => {
 
   //GETTING A RANDOM QUESTION NUMBER 
   questionCounter++;
-  questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+  questionCounterText.textContent = `${questionCounter}/${MAX_QUESTIONS}`;
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.textContent = currentQuestion.question;
