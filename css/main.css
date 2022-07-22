@@ -249,6 +249,10 @@ body {
 }
 
 /*LOADER */
+#loader {
+  position: absolute;
+}
+
 /* FORMS */
 form {
   width: 100%;
