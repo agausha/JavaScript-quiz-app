@@ -141,7 +141,7 @@ startCounter = () => {
       quizTime--;
       const sec = Math.floor(quizTime % 60);
       const min = Math.floor(quizTime / 60) % 60;
-      counter.innerHTML = `${min} : ${sec}`;
+      counter.textContent = `${min} : ${sec}`;
     }
   }, 1000)
 }
