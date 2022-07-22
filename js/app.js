@@ -1,7 +1,7 @@
 const question = document.querySelector('.question');
 // Converting into an Array & using an Array function
 const options = Array.from(document.querySelectorAll('.option__text')); 
-const questionCounterText = document.getElementById("questionCounter");
+const questionCounterText = document.getElementById('questionCounter');
 const scoreText = document.getElementById('score');
 const counter = document.getElementById('timeCounter');
 // const loader = document.querySelector('.loader');
@@ -52,8 +52,10 @@ fetch(
   });
 
 //CONSTANTS
-const CORRECT_ANSWERS = 10; // Marks per Correct Answer
-const MAX_QUESTIONS = 10; // Maximum questions to answer before finishing the quiz
+ // Marks per Correct Answer
+const CORRECT_ANSWERS = 10;
+ // Maximum questions to answer before finishing the quiz
+const MAX_QUESTIONS = 10;
 
 // Using spread operator to go into new Array which is (availableQuestions)
 startQuiz = () => {
