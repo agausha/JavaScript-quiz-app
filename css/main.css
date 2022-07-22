@@ -244,6 +244,10 @@ body {
           box-shadow: 0 0.4rem 1.4rem 0 rgba(88, 224, 233, 0.302);
 }
 
+.hidden {
+  display: none;
+}
+
 /* FORMS */
 form {
   width: 100%;
