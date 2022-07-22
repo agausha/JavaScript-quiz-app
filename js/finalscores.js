@@ -1,7 +1,7 @@
 const finalScoresList = document.querySelector(".finalScoresList");
 const finalScores = JSON.parse(localStorage.getItem("finalScores")) || [];
 
-finalScoresList.innerHTML = finalScores
+finalScoresList.textContent = finalScores
 
 // DISPLAYING FINAL SCORE USING MAP 
   .map(score => {
