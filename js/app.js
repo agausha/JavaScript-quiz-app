@@ -85,7 +85,7 @@ getNewQuestion = () => {
 //GETTING A RANDOM OPTION 
   options.forEach((option) => {
     const number = option.dataset['number'];
-    option.innerHTML = currentQuestion['option' + number];
+    option.textContent = currentQuestion['option' + number];
   });
 
   // GETTING RID OF QUESTION THAT HAS ALREADY BEEN USED (USING SPLICE)
