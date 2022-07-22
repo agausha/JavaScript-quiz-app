@@ -255,6 +255,7 @@ body {
   right: 50%;
   bottom: 45%;
   z-index: 1;
+  border-radius: 50%;
   border: 1.6rem solid whitesmoke;
   border-top: 1.6rem solid #3adfc6;
 }
