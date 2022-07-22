@@ -63,6 +63,7 @@ startQuiz = () => {
   availableQuestions = [...questions];  
   getNewQuestion();
   quiz.classList.remove('hidden');
+  loader.classList.add('hidden');
 };
 
 // SAVING SCORES IN LOCAL STORAGE
