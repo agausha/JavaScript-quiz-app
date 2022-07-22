@@ -254,6 +254,7 @@ body {
   left: 45%;
   right: 50%;
   bottom: 45%;
+  z-index: 1;
 }
 
 /* FORMS */
