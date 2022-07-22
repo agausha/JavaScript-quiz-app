@@ -3,7 +3,7 @@ const options = Array.from(document.querySelectorAll('.option__text'));
 const questionCounterText = document.getElementById('questionCounter');
 const scoreText = document.getElementById('score');
 const counter = document.getElementById('timeCounter');
-// const loader = document.querySelector('.loader');
+const loader = document.getElementById('loader');
 // const quiz = document.querySelector('.quiz');
 
 
