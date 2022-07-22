@@ -1,5 +1,4 @@
 const question = document.querySelector('.question');
-// Converting into an Array & using an Array function
 const options = Array.from(document.querySelectorAll('.option__text')); 
 const questionCounterText = document.getElementById('questionCounter');
 const scoreText = document.getElementById('score');
@@ -9,11 +8,11 @@ const counter = document.getElementById('timeCounter');
 
 
 // VARIABLES
-let currentQuestion = {}; // Creating a delay to wait for some seconds before loading the next question again
+let currentQuestion = {}; 
 let acceptingAnswers = false;
 let score = 0;
-let questionCounter = 0; // Showing the question number you are currently on
-let availableQuestions = []; // Finding a unique question from the availableQuestions Array to give the user
+let questionCounter = 0; 
+let availableQuestions = []; 
 
 let questions = [];
 
@@ -54,10 +53,10 @@ fetch(
 //CONSTANTS
  // Marks per Correct Answer
 const CORRECT_ANSWERS = 10;
- // Maximum questions to answer before finishing the quiz
+ // Maximum questions 
 const MAX_QUESTIONS = 10;
 
-// Using spread operator to go into new Array which is (availableQuestions)
+// Getting availableQuestions
 startQuiz = () => {
   questionCounter = 0;
   score = 0;
@@ -88,7 +87,7 @@ getNewQuestion = () => {
     option.textContent = currentQuestion['option' + number];
   });
 
-  // GETTING RID OF QUESTION THAT HAS ALREADY BEEN USED (USING SPLICE)
+  // GETTING RID OF QUESTION THAT HAS ALREADY BEEN USED
   availableQuestions.splice(questionIndex, 1);
   acceptingAnswers = true;
 };
@@ -102,7 +101,7 @@ options.forEach((option) => {
     const selectedOption = e.target;
     const selectedAnswer = selectedOption.dataset['number'];
 
-    // CHOOSING CLASS TO APPLY USING TENARY OPERATOR SYNTAX FOR CORRECT / INCORRECT ANSWERS
+    // CHOOSING CLASS TO APPLY
     const classToApply =
       selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
@@ -117,7 +116,7 @@ options.forEach((option) => {
     // INCREMENTING  SCORE
     incrementScore = (num) => {
       score += num;
-      scoreText.innerText = `${score}%`;
+      scoreText.textContent = `${score}%`;
     };
 
     if (classToApply === 'correct') {
