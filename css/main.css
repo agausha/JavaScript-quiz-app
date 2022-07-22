@@ -251,6 +251,7 @@ body {
 /*LOADER */
 #loader {
   position: absolute;
+  left: 45%;
 }
 
 /* FORMS */
