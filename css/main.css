@@ -264,7 +264,9 @@ body {
           animation: spin 2s linear infinite;
 }
 
-/* FORMS */
+@-webkit-keyframes spin {}
+
+@keyframes spin {}/* FORMS */
 form {
   width: 100%;
   display: -webkit-box;
