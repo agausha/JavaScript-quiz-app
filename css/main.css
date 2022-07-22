@@ -256,6 +256,7 @@ body {
   bottom: 45%;
   z-index: 1;
   border: 1.6rem solid whitesmoke;
+  border-top: 1.6rem solid #3adfc6;
 }
 
 /* FORMS */
