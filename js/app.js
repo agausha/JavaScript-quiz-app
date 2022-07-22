@@ -1,5 +1,6 @@
 const question = document.querySelector('.question');
-const options = Array.from(document.getElementsByClassName('option__text')); // Converting into an Array & using an Array function
+// Converting into an Array & using an Array function
+const options = Array.from(document.querySelectorAll('.option__text')); 
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById('score');
 const counter = document.getElementById('timeCounter');
