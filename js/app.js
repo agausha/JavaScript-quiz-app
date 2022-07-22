@@ -4,7 +4,7 @@ const questionCounterText = document.getElementById('questionCounter');
 const scoreText = document.getElementById('score');
 const counter = document.getElementById('timeCounter');
 const loader = document.getElementById('loader');
-// const quiz = document.querySelector('.quiz');
+const quiz = document.getElementById('quiz');
 
 
 // VARIABLES
