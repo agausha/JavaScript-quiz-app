@@ -21,10 +21,10 @@ saveFinalScore = (e) => {
         name: username.value,
     };
     finalScores.push(score);
-    finalScores.sort((a, b) => b.score - a.score); // SORTING THE FINAL SCORE FROM HIGHEST TO LOWEST
+    finalScores.sort((a, b) => b.score - a.score); // SORTING THE FINAL SCORE 
     finalScores.splice(7);
 
-// UPDATING THE FINAL SCORE IN LOCAL STORAGE
+// UPDATING THE FINAL SCORE 
     localStorage.setItem('finalScores', JSON.stringify(finalScores));
     window.location.assign('/finalscores.html');
 };
