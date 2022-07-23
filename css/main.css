@@ -362,6 +362,9 @@ input::placeholder {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #loader {
+    left: 40%;
+  }
 }
 
 .main {
