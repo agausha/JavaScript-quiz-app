@@ -235,7 +235,7 @@ body {
 }
 
 .cta:hover {
-  background: #3adfc6;
+  background: #56a6eb;
   -webkit-transform: translateY(0.5rem);
           transform: translateY(0.5rem);
   -webkit-transition: all 0.3s ease;
